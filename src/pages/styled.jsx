@@ -8,9 +8,8 @@ export const AppContainer = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 1rem 4rem;
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-size: 100%;
     background-repeat: repeat-y;
-    background-position:top;
+    background-position:0% 15%;
 `;

@@ -9,18 +9,18 @@ const Paginas = [
         "key": "0"
     },
     {
-        "caminho": "projeto",
-        "nome": "Projeto",
+        "caminho": "sobre",
+        "nome": "Sobre",
         "key": "1"
     },
     {
-        "caminho": "sobre",
-        "nome": "Sobre",
+        "caminho": "https://www.linkedin.com/in/samuellkq/",
+        "nome": "Linkedin",
         "key": "2"
     },
     {
-        "caminho": "contato",
-        "nome": "Contato",
+        "caminho": "https://github.com/SamuelWSGIT",
+        "nome": "Github",
         "key": "3"
     },
 ]

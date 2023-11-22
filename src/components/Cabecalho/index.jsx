@@ -1,12 +1,12 @@
-import CabecalhoIntro from "./CabecalhoIntro";
-import Navegacao from "./Navegacao";
+import Banner from "./Banner";
+import SecaoSuperior from "./SecaoSuperior";
 import { CabecalhoContainer } from "./styled";
 
 export default function Cabecalho() {
     return (
         <CabecalhoContainer>
-            <CabecalhoIntro />
-            <Navegacao />
+            <SecaoSuperior />
+            <Banner />
         </CabecalhoContainer>
     )
 }
