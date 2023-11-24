@@ -7,6 +7,8 @@ export const ResumoContainer = styled.div`
 `;
 export const ResumoImagem = styled.div`
   width: 30%;
+  border-bottom: 5px solid var(--color-primary-offset);
+  border-radius: 100% 15px 15px 15px;
 `;
 export const ResumoTextos = styled.div`
   width: 70%;

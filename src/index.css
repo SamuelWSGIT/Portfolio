@@ -8,7 +8,6 @@
   --color-bg-offset: #00000080;
   --color-text: #ffffff;
   --color-text-offset: #ffffff80;
-  --color-border: linear-gradient(to bottom, #29ff81 -10.35%, #9d73ff 84.05%);
   --color-primary: #a883ff;
   --color-primary-offset: #a883ff80;
   --color-secondary: #57e688;
@@ -16,15 +15,15 @@
   --color-tertiary: #f27405;
 }
 .white-theme {
-  --color-bg: #0000001a;
-  --color-bg-offset: #000000e1;
+  --color-bg: #000000;
+  --color-bg-offset: #00000080;
   --color-text: #ffffff;
   --color-text-offset: #ffffff80;
-  --color-border: linear-gradient(218.23deg, #29ff81 -10.35%, #9d73ff 84.05%);
   --color-primary: #a883ff;
   --color-primary-offset: #a883ff80;
   --color-secondary: #57e688;
   --color-secondary-offset: #57e68980;
+  --color-tertiary: #f27405;
 }
 
 html,

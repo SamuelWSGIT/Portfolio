@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { ItemNavegacao, Nave, NavegacaoContainer } from "./styled";
+import AnimacaoColorida from "../../../AnimacaoColorida";
 
 const Paginas = [
     {
@@ -27,7 +28,9 @@ const Paginas = [
 const nav = Paginas.map(Pagina =>
     <ItemNavegacao key={Pagina.key} >
         <Link style={{ textDecoration: 'none' }} to={Pagina.caminho}>
-            <p>{Pagina.nome}</p>
+            <AnimacaoColorida>
+                {Pagina.nome}
+            </AnimacaoColorida>
         </Link>
     </ItemNavegacao>
 

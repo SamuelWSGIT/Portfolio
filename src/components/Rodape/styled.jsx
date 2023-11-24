@@ -9,18 +9,10 @@ bottom: 0;
   align-items: center;
   
   span:first-child {
-    color: var(--color-primary-offset);
+    color: var(--color-primary);
     
   }
   span{
-    color: var(--color-secondary-offset);
-  }
-  .diferente1:hover{
-    span:first-child{
-            color: var(--color-primary);
-        }
-    span{
-        color: var(--color-secondary);
-    }
+    color: var(--color-secondary);
   }
 `;

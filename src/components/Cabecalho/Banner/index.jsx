@@ -3,6 +3,7 @@ import BannerImagem from "./BannerImagem";
 import BannerTexto from "./BannerTexto";
 import { BannerContainer, BannerImgText } from "./styled";
 import LinkTexto from "../../LinkTexto";
+import AnimacaoColorida from "../../AnimacaoColorida";
 
 export default function Banner() {
     return (
@@ -13,7 +14,9 @@ export default function Banner() {
             </BannerImgText>
             <Link to="projeto">
                 <LinkTexto>
-                    Ver meus projetos
+                    <AnimacaoColorida>
+                        Ver meus projetos
+                    </AnimacaoColorida>
                 </LinkTexto>
             </Link>
         </BannerContainer>

@@ -1,24 +1,22 @@
 import styled from 'styled-components';
 
 export const CabecalhoIntroContainer = styled.div`
-    width: fit-content;
+    width: 90vw;
     position: absolute;
+    display: flex;
+    justify-content: space-between;
     
-    .diferente1{
-        span{
-            color: var(--color-primary);
+    .primeiro{
+        span:first-child{
+        color: var(--color-primary);
         }
     }
-    .diferente2{
-        span{
+    .segundo{
+        span:nth-child(2n + 1){
             color: var(--color-secondary);
         }
-    }
-
-    span.R{
-        color: var(--color-primary);
-    }
-    span.L{
-        color: var(--color-tertiary);
+        span:nth-child(-2n + 2 ){
+            color: var(--color-primary);
+        }
     }
 `;

@@ -8,7 +8,7 @@ export default function LinkTexto({ children }) {
     return (
         <LinkTextoContainer>
             <FontAwesomeIcon size="xl" icon={faArrowDown} />
-            <p>{children}</p>
+            {children}
         </LinkTextoContainer>
     )
 }

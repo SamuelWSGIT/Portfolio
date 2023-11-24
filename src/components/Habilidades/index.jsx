@@ -1,4 +1,3 @@
-
 import Titulo from "../Titulo";
 import { HabilidadesContainer, HabilidadesIcones, HabilidadesLista } from "./styled";
 
@@ -50,7 +49,9 @@ const MinhasHabilidades = ListaHabilidades.map(habilidade => (
 export default function Habilidades() {
     return (
         <HabilidadesContainer>
-            <Titulo>Minhas habilidades</Titulo>
+            <Titulo>
+                Minhas habilidades
+            </Titulo>
             <HabilidadesLista>
                 {MinhasHabilidades}
             </HabilidadesLista>

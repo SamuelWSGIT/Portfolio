@@ -3,6 +3,6 @@ import styled from 'styled-components';
 export const SecaoSuperiorContainer = styled.section`
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 90vw;
   height: 6rem;
 `;
