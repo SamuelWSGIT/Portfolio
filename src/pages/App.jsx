@@ -5,8 +5,8 @@ import Home from "./Home";
 import Sobre from "./Sobre";
 import Contato from "./Contato";
 import Projeto from "./Projeto";
-import Cabecalho from "../components/Cabecalho";
 import Rodape from "../components/Rodape";
+import Cabecalho from "../components/Cabecalho";
 
 
 export default function App() {

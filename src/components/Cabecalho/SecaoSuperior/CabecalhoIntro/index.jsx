@@ -1,3 +1,4 @@
+import AnimacaoColorida from "../../../AnimacaoColorida";
 import AnimacaoDigitacao from "../../../AnimacaoDigitacao";
 import { CabecalhoIntroContainer } from "./styled";
 

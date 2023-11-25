@@ -1,3 +1,4 @@
+import AnimacaoColorida from "../AnimacaoColorida";
 import Titulo from "../Titulo";
 import { HabilidadesContainer, HabilidadesIcones, HabilidadesLista } from "./styled";
 
@@ -41,8 +42,10 @@ const ListaHabilidades = [
 
 const MinhasHabilidades = ListaHabilidades.map(habilidade => (
     <HabilidadesIcones key={habilidade.key} >
-        <p>{habilidade.nome}</p>
-        <img src={habilidade.icone} alt="icone" />
+        <AnimacaoColorida>
+            <p>{habilidade.nome}</p>
+            <img src={habilidade.icone} alt="icone" />
+        </AnimacaoColorida>
     </HabilidadesIcones>
 ))
 

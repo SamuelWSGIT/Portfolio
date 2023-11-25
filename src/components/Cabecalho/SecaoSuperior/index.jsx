@@ -5,8 +5,8 @@ import { SecaoSuperiorContainer } from "./styled";
 export default function SecaoSuperior() {
     return (
         <SecaoSuperiorContainer>
-            <CabecalhoIntro />
             <Navegacao />
+            <CabecalhoIntro />
         </SecaoSuperiorContainer>
     )
 }

@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const BannerContainer = styled.div`
-    padding: 5rem 0;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: center;
 `;
 
 export const BannerImgText = styled.div`

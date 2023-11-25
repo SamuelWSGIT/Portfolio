@@ -1,7 +1,10 @@
+import Resumo from "../../components/Resumo";
 import { SobreContainer } from "./styled";
 
 export default function Sobre() {
     return (
-        <SobreContainer>Sobre</SobreContainer>
+        <SobreContainer>
+            <Resumo />
+        </SobreContainer>
     )
 }

@@ -2,13 +2,16 @@ import styled from 'styled-components';
 
 export const ResumoContainer = styled.div`
   display: flex;
+  align-items: center;
   width: 70rem;
-  gap: 9rem;
+  gap: 5rem;
 `;
 export const ResumoImagem = styled.div`
   width: 30%;
-  border-bottom: 5px solid var(--color-primary-offset);
-  border-radius: 100% 15px 15px 15px;
+  img{
+    border-bottom: 5px solid var(--color-primary-offset);
+    border-radius: 15px;
+  }
 `;
 export const ResumoTextos = styled.div`
   width: 70%;
