@@ -1,8 +1,8 @@
 import { ACContainer } from "./styled";
 
-export default function AnimacaoColorida({ children }) {
+export default function AnimacaoColorida({ children, forma }) {
     return (
-        <ACContainer>
+        <ACContainer className={forma}>
             {children}
         </ACContainer>
     )

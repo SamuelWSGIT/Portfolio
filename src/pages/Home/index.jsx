@@ -1,10 +1,17 @@
-import Habilidades from "../../components/Habilidades";
+import Banner from "../../components/Cabecalho/Banner";
 import { HomeContainer } from "./styled";
+import { motion } from 'framer-motion';
 
 export default function Home() {
     return (
-        <HomeContainer>
-            <Habilidades />
-        </HomeContainer>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+        >
+            <HomeContainer>
+                <Banner />
+            </HomeContainer>
+        </motion.div>
     )
 }

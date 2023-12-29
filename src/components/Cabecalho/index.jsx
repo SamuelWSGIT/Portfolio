@@ -6,7 +6,6 @@ export default function Cabecalho() {
     return (
         <CabecalhoContainer>
             <SecaoSuperior />
-            <Banner />
         </CabecalhoContainer>
     )
 }

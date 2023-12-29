@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { ItemNavegacao, Nave, NavegacaoContainer } from "./styled";
 import AnimacaoColorida from "../../../AnimacaoColorida";
+import { LinkTextoContainer } from "../../../LinkTexto/styled";
 
 const Paginas = [
     {
@@ -27,13 +28,14 @@ const Paginas = [
 
 const nav = Paginas.map(Pagina =>
     <ItemNavegacao key={Pagina.key} >
-        <Link style={{ textDecoration: 'none' }} to={Pagina.caminho} >
-            <AnimacaoColorida>
-                {Pagina.nome}
-            </AnimacaoColorida>
-        </Link>
+        <LinkTextoContainer>
+            <NavLink className="linkEditado" style={{ textDecoration: 'none' }} to={Pagina.caminho} >
+                <AnimacaoColorida>
+                    {Pagina.nome}
+                </AnimacaoColorida>
+            </NavLink>
+        </LinkTextoContainer>
     </ItemNavegacao>
-
 );
 
 export default function Navegacao() {

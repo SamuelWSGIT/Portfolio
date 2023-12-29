@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const TituloContainer = styled.div`
-  padding: 2rem 0;
+  display: flex;
   width: fit-content;
+  justify-content: center;
+  align-items: center;
 `;

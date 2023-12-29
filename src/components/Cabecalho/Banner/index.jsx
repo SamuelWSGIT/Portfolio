@@ -1,24 +1,24 @@
-import { Link } from "react-router-dom";
+import { BannerContainer, BannerImgText } from "./styled";
 import BannerImagem from "./BannerImagem";
 import BannerTexto from "./BannerTexto";
-import { BannerContainer, BannerImgText } from "./styled";
 import LinkTexto from "../../LinkTexto";
 import AnimacaoColorida from "../../AnimacaoColorida";
+import Revelar from "../../Revelar";
 
 export default function Banner() {
     return (
         <BannerContainer>
             <BannerImgText>
-                <BannerTexto />
+                <Revelar>
+                    <BannerTexto />
+                </Revelar>
                 <BannerImagem />
             </BannerImgText>
-            <Link to="projeto">
-                <LinkTexto>
-                    <AnimacaoColorida>
-                        Ver meus projetos
-                    </AnimacaoColorida>
-                </LinkTexto>
-            </Link>
+            <LinkTexto local="projeto">
+                <AnimacaoColorida>
+                    Ver meus projetos
+                </AnimacaoColorida>
+            </LinkTexto>
         </BannerContainer>
     )
 }

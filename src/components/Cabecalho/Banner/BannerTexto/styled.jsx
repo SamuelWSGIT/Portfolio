@@ -5,4 +5,9 @@ export const BannerTextoContainer = styled.div`
   span{
     color: var(--color-primary);
   }
+  h1{
+    div{
+      font-size: 6rem;
+    }
+  }
 `;
