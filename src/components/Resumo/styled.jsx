@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const TextoSobreMim = styled.div`
+  padding-bottom: 1rem;
+`;
+
 export const ResumoContainer = styled.div`
   height: 80%;
   display: flex;
@@ -22,7 +26,7 @@ export const ResumoImagem = styled.div`
   }
 `;
 export const ResumoTextos = styled.div`
-  height: 60vh;
+  height: fit-content;
   width: 70%;
   h2{
     padding-bottom: 2rem;

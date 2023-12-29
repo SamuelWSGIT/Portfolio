@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Titulo from "../Titulo";
-import { ResumoContainer, ResumoDivisao, ResumoImagem, ResumoTextos } from "./styled";
-import Typewriter from 'typewriter-effect';
+import { ResumoContainer, ResumoDivisao, ResumoImagem, ResumoTextos, TextoSobreMim } from "./styled";
 
 export default function Resumo() {
 
@@ -9,11 +8,7 @@ export default function Resumo() {
         {
             "frases": ["Desde criança, sempre fui apaixonado por tecnologias e inovações providas pelas novas tecnologias. Atualmente, estou estudando desenvolvimento web na Alura, me dedico diariamente a superar desafios para uma evolução constante. além disso sou geek, amo jogos e sci-fi."],
             "key": "0",
-        }
-    ])
-
-    const [textoAntigo, setTextoAntigo] = useState([
-        {
+        }, {
             "frases": ["Atualmente, estou estudando desenvolvimento web na Alura, me dedico diariamente a superar desafios para uma evolução constante. além disso sou geek, amo jogos e sci-fi."],
             "key": "1",
         }, {
@@ -31,45 +26,24 @@ export default function Resumo() {
         }
     ])
 
-    useEffect(() => {
-        localStorage.setItem('novoTexto', JSON.stringify(novoTexto))
-    }, [novoTexto])
-
-
-    function AdicionarTexto(texto) {
-        return (
-            setNovoTexto[{ ...novoTexto }, texto]
-        )
-        console.log(feito)
-    }
-
-    if (novoTexto.length < textoAntigo.length) {
-        const digitarTextos = novoTexto.map(texto =>
-            <div key={texto.key} >
-                <Typewriter
-                    options={{
-                        strings: texto.frases,
-                        autoStart: true,
-                        loop: false,
-                        cursor: '_',
-                    }}
-                />
-            </div>
-        );
-        return (
-            <ResumoContainer>
-                <ResumoDivisao>
-                    <ResumoImagem>
-                        <img src="/img/Samuel-Perfil-About.png" alt="Imagem do Samuel Almeida" />
-                    </ResumoImagem>
-                    <ResumoTextos>
-                        <Titulo>
-                            Sobre mim
-                        </Titulo>
-                        {digitarTextos}
-                    </ResumoTextos>
-                </ResumoDivisao>
-            </ResumoContainer>
-        )
-    }
+    const digitarTextos = novoTexto.map(texto =>
+        <TextoSobreMim key={texto.key} >
+            {texto.frases}
+        </TextoSobreMim>
+    );
+    return (
+        <ResumoContainer>
+            <ResumoDivisao>
+                <ResumoImagem>
+                    <img src="/img/Samuel-Perfil-About.png" alt="Imagem do Samuel Almeida" />
+                </ResumoImagem>
+                <ResumoTextos>
+                    <Titulo>
+                        Sobre mim
+                    </Titulo>
+                    {digitarTextos}
+                </ResumoTextos>
+            </ResumoDivisao>
+        </ResumoContainer>
+    )
 }
