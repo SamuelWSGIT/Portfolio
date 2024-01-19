@@ -18,7 +18,6 @@ export const HabilidadesLista = styled.ul`
 
 export const HabilidadesIcones = styled.li`
     box-sizing: border-box;
-    background-color: var(--color-bg-offset);
     border: 1px solid var(--color-text-offset);
     border-radius: 5px;
     height: 8rem;

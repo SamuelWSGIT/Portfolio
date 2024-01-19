@@ -1,4 +1,4 @@
-import { ListaDeProjetos, ProjetoContainer, Projetos } from "./styled";
+import { ListaDeProjetos, Maiores, Menores, ProjetoContainer, Projetos } from "./styled";
 import { motion } from 'framer-motion'
 import Titulo from "../../components/Titulo";
 import { useEffect, useState } from "react";
@@ -12,7 +12,7 @@ export default function Projeto() {
         fetch('https://api.github.com/users/SamuelWSGIT/repos')
             .then(Response => Response.json())
             .then(data => setRepositorios(data))
-            .then(console.log(repositorios))
+        console.log(repositorios)
     }, [])
 
     return (
@@ -30,9 +30,14 @@ export default function Projeto() {
                                 if (repositorio.stargazers_count > 0)
                                     return (
                                         <li key={repositorio.id}>
-                                            <h3>{repositorio.name}</h3>
-                                            <p>{repositorio.description}</p>
-                                            <a href={repositorio.html_url} target="_blank">Saiba Mais</a>
+                                            <Maiores>
+                                                <h3>{repositorio.name}</h3>
+                                                <p>{repositorio.description}</p>
+                                            </Maiores>
+                                            <Menores>
+                                                <p>{repositorio.created_at.slice(0, - 10)}</p>
+                                                <a href={repositorio.html_url} target="_blank">Saiba Mais</a>
+                                            </Menores>
                                         </li>
                                     )
                             })}
