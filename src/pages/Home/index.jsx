@@ -1,4 +1,5 @@
 import Banner from "../../components/Cabecalho/Banner";
+import Habilidades from "../../components/Habilidades";
 import { HomeContainer } from "./styled";
 import { motion } from 'framer-motion';
 
@@ -11,6 +12,7 @@ export default function Home() {
         >
             <HomeContainer>
                 <Banner />
+                <Habilidades />
             </HomeContainer>
         </motion.div>
     )

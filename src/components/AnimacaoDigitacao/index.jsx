@@ -1,3 +1,4 @@
+import AnimacaoColorida from "../AnimacaoColorida";
 import { AnimacaoDigitacaoContainer } from "./styled";
 import { Typewriter } from 'react-simple-typewriter';
 
