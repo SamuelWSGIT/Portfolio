@@ -9,10 +9,12 @@ export const ProjetoContainer = styled.div`
 
 export const Projetos = styled.div`
     height: 100%;
+    width: 90%;
 `;
 
 export const ListaDeProjetos = styled.ul`
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
 
@@ -29,8 +31,8 @@ export const ListaDeProjetos = styled.ul`
     h3{
         text-transform: uppercase;
     }
-    a{
-
+    p{
+        font-size: 0.8rem;
     }
 `;
 
@@ -44,9 +46,9 @@ export const Menores = styled.div`
     justify-content: space-between;
     bottom: 0;
     p{
-     font-size: 1rem;
+     font-size: 0.7rem;
     }
     a{
-     font-size: 1rem;
+     font-size: 0.7rem;
     }
 `;
