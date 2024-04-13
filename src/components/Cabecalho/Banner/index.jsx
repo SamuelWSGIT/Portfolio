@@ -1,4 +1,4 @@
-import { BannerContainer, BannerImgText } from "./styled";
+import { BannerContainer, BannerImgText, LinkContainer } from "./styled";
 import BannerImagem from "./BannerImagem";
 import BannerTexto from "./BannerTexto";
 import LinkTexto from "../../LinkTexto";
@@ -14,11 +14,23 @@ export default function Banner() {
                 </Revelar>
                 <BannerImagem />
             </BannerImgText>
-            <LinkTexto local="projeto">
-                <AnimacaoColorida>
-                    Ver meus projetos
-                </AnimacaoColorida>
-            </LinkTexto>
+            <LinkContainer>
+                <LinkTexto local="projeto">
+                    <AnimacaoColorida>
+                        Ver meus projetos
+                    </AnimacaoColorida>
+                </LinkTexto>
+                <LinkTexto local="contato">
+                    <AnimacaoColorida>
+                        Entre em Contato
+                    </AnimacaoColorida>
+                </LinkTexto>
+                <LinkTexto local="curriculo">
+                    <AnimacaoColorida>
+                        Baixe Meu Currículo
+                    </AnimacaoColorida>
+                </LinkTexto>
+            </LinkContainer>
         </BannerContainer>
     )
 }

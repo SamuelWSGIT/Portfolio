@@ -11,3 +11,8 @@ export const BannerImgText = styled.div`
     display: flex;
     align-items: center;
 `
+
+export const LinkContainer = styled.div`
+    display: flex;
+    gap: 1rem;
+`

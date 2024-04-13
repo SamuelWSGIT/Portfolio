@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
 export const TextoSobreMim = styled.div`
-  padding-bottom: 1rem;
+  padding-bottom: .1rem;
 `;
+
+export const TituloSobreMim = styled.h3`
+  padding: .5rem 0rem;
+`
 
 export const ResumoContainer = styled.div`
   height: 80%;

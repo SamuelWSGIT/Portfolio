@@ -7,8 +7,8 @@ import { NavLink } from "react-router-dom";
 export default function LinkTexto({ children, local }) {
     return (
         <LinkTextoContainer>
-            <FontAwesomeIcon size="xl" icon={faArrowDown} />
             <NavLink className="linkEditado" to={local} >
+            <FontAwesomeIcon size="xl" icon={faArrowDown} />
                 {children}
             </NavLink>
         </LinkTextoContainer>

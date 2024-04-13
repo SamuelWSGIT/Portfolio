@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 
 export const ACContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
 &&.ativo{
   background:
   -webkit-linear-gradient(225deg, rgb(242, 116, 5), rgb(87, 230, 136), rgb(168, 131, 251)) 0% 0% / 300% 300%;
