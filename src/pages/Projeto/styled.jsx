@@ -8,15 +8,16 @@ export const ProjetoContainer = styled.div`
 `;
 
 export const Projetos = styled.div`
-    height: 100%;
-    width: 90%;
+    height: 80%;
+    width: 80vw;
 `;
 
 export const ListaDeProjetos = styled.ul`
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 2rem;
+    padding: 2rem;
 
     li{
         display: flex;
@@ -30,9 +31,10 @@ export const ListaDeProjetos = styled.ul`
     }
     h3{
         text-transform: uppercase;
+        font-size: 2rem;
     }
     p{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 `;
 

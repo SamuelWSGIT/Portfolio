@@ -11,8 +11,10 @@ export const HabilidadesContainer = styled.section`
 `;
 export const HabilidadesLista = styled.ul`
     display: flex;
-    justify-content: start;
+    flex-wrap: wrap;
+    justify-content: center;
     height: 8rem;
+    width: 80vw;
     gap: 1rem;
 `;
 

@@ -20,3 +20,9 @@ export const CabecalhoIntroContainer = styled.div`
         }
     }
 `;
+
+export const CabecalhoTextoLogo = styled.div`
+    gap: 0.3rem;
+    display: flex;
+    flex-direction: column;
+`;
