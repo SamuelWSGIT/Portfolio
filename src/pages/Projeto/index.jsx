@@ -1,8 +1,9 @@
-import { ListaDeProjetos, Maiores, Menores, ProjetoContainer, Projetos } from "./styled";
+import { ProjetoContainer, Projetos } from "./styled";
 import { motion } from 'framer-motion'
 import Titulo from "../../components/Titulo";
 import { useEffect, useState } from "react";
 import Revelar from "../../components/Revelar";
+import NetlifyData from "../../components/Netlify/index"
 
 export default function Projeto() {
 
@@ -25,23 +26,7 @@ export default function Projeto() {
                 <Titulo>Projetos</Titulo>
                 <Projetos>
                     <Revelar>
-                        <ListaDeProjetos>
-                            {repositorios.map(repositorio => {
-                                if (repositorio.stargazers_count > 0)
-                                    return (
-                                        <li key={repositorio.id}>
-                                            <Maiores>
-                                                <h3>{repositorio.name}</h3>
-                                                <p>{repositorio.description}</p>
-                                            </Maiores>
-                                            <Menores>
-                                                <p>{repositorio.created_at.slice(0, - 10)}</p>
-                                                <a href={repositorio.html_url} target="_blank">Saiba Mais</a>
-                                            </Menores>
-                                        </li>
-                                    )
-                            })}
-                        </ListaDeProjetos>
+                        <NetlifyData/>    
                     </Revelar>
                 </Projetos>
             </ProjetoContainer>
