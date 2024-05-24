@@ -23,7 +23,6 @@ export default function Projeto() {
             transition={{ duration: 0.7 }}
         >
             <ProjetoContainer>
-                <Titulo>Projetos</Titulo>
                 <Projetos>
                     <Revelar>
                         <NetlifyData/>    

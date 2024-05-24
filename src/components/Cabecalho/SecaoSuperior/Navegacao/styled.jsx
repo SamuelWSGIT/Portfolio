@@ -9,8 +9,16 @@ export const NavegacaoContainer = styled.div`
 
 export const Nave = styled.ul`
     display: flex;
-    gap: 5rem;
-`
-export const ItemNavegacao = styled.li`
+    gap: 2rem; /* Reduzido de 5rem para 2rem para telas menores */
 
+    @media screen and (max-width: 550px) {
+        gap: 1rem; /* Ajuste adicional para telas menores */
+    }
+    @media screen and (max-width: 400px) {
+        gap: .5rem; /* Ajuste adicional para telas menores */
+    }
+`;
+
+export const ItemNavegacao = styled.li`
+    /* Adicione os estilos necessários aqui conforme necessário */
 `;

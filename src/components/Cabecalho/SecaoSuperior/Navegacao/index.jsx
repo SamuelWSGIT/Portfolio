@@ -15,14 +15,24 @@ const Paginas = [
         "key": "1"
     },
     {
+        "caminho": "projeto",
+        "nome": "Projetos",
+        "key": "2"
+    },
+    {
+        "caminho": "contato",
+        "nome": "Contato",
+        "key": "3"
+    },
+    {
         "caminho": "https://www.linkedin.com/in/samuellkq/",
         "nome": "Linkedin",
-        "key": "2"
+        "key": "4"
     },
     {
         "caminho": "https://github.com/SamuelWSGIT",
         "nome": "Github",
-        "key": "3"
+        "key": "5"
     }
 ];
 

@@ -8,6 +8,11 @@ export const ListaDeProjetos = styled.ul`
     padding: 1rem;
     box-sizing: border-box;
 
+    @media screen and (max-width: 450px) {
+        gap: .5rem;
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    }
+
     li {
         display: flex;
         align-items: center;

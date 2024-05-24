@@ -8,7 +8,9 @@ export default function Contato() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
         >
-            <ContatoContainer>Contato</ContatoContainer>
+            <ContatoContainer>
+                
+            </ContatoContainer>
         </motion.div>
     )
 }

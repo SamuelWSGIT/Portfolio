@@ -69,7 +69,7 @@ export default function Habilidades() {
     return (
         <HabilidadesContainer>
             <Titulo>
-                Minhas habilidades
+                <h2>Minhas Habilidades</h2>
             </Titulo>
             <HabilidadesLista>
                 {MinhasHabilidades}

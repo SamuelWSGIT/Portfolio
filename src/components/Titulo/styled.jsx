@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-export const TituloContainer = styled.div`
-  display: flex;
-  width: fit-content;
-  justify-content: center;
-  align-items: center;
+export const TituloContainer = styled.h2`
+  padding: 0.5rem 0;
+  font-size: x-large;
 `;

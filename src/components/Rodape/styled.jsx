@@ -8,6 +8,15 @@ export const RodapeContainer = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 600px) {
+    width: 95vw;
+      p{
+        font-size: small;
+      }
+    }
+    @media screen and (max-width: 400px) {
+    flex-direction: column;
+    }
   
   span:first-child {
     color: var(--color-primary);

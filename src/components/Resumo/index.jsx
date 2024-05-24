@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Titulo from "../Titulo";
-import { ResumoContainer, ResumoDivisao, ResumoImagem, ResumoTextos, TextoSobreMim, TituloSobreMim } from "./styled";
+import { ResumoContainer, ResumoImagem, ResumoTextos, TextoSobreMim, TituloSobreMim } from "./styled";
 
 export default function Resumo() {
 
@@ -45,14 +45,12 @@ export default function Resumo() {
 
     return (
         <ResumoContainer>
-            <ResumoDivisao>
                 <ResumoImagem>
                     <img src="/img/Samuel-Perfil-About.png" alt="Imagem do Samuel Almeida" />
                 </ResumoImagem>
                 <ResumoTextos>
                     {digitarTextos}
                 </ResumoTextos>
-            </ResumoDivisao>
         </ResumoContainer>
     )
 }

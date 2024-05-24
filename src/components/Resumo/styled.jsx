@@ -1,41 +1,45 @@
 import styled from 'styled-components';
 
-export const TextoSobreMim = styled.div`
-  padding-bottom: .1rem;
-`;
-
-export const TituloSobreMim = styled.h3`
-  padding: .5rem 0rem;
-`
-
 export const ResumoContainer = styled.div`
-  height: 80%;
   display: flex;
-  flex-direction: column;
-  justify-content: start;
-  gap: 5rem;
-`;
-export const ResumoDivisao = styled.div`
-  display: flex;
-  align-items: center;
-  width: 70rem;
-  gap: 5rem;
+  align-items: start;
   justify-content: center;
+  gap: 3rem;
+  width: 80vw;
 `;
+
 export const ResumoImagem = styled.div`
   width: 30%;
-  img{
+  @media screen and (max-width: 1460px) {
+        display: none;
+    }
+  img {
     border-bottom: 5px solid var(--color-primary-offset);
     border-radius: 15px;
+    max-width: 100%;
+    height: auto;
   }
 `;
+
+export const TextoSobreMim = styled.h2`
+  padding-bottom: 0.5rem;
+  font-size: large;
+  line-height: 1.5;
+`;
+
+export const TituloSobreMim = styled.h2`
+  padding: 0.5rem 0;
+  font-size: x-large;
+`;
+
 export const ResumoTextos = styled.div`
-  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   width: 70%;
-  h2{
-    padding-bottom: 2rem;
-  }
-  p{
-    padding-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    width: 100%;
   }
 `;

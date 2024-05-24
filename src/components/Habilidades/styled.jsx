@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const HabilidadesContainer = styled.section`
-    height: 70vh;
+    margin:  2rem 0;
+    height: max-content;
     gap: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -13,7 +14,7 @@ export const HabilidadesLista = styled.ul`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 8rem;
+    height: fit-content;
     width: 80vw;
     gap: 1rem;
 `;
@@ -29,6 +30,15 @@ export const HabilidadesIcones = styled.li`
     justify-content: center;
     align-items: center;
     position: relative;
+    @media screen and (max-width: 1450px) {
+        height: 7rem;
+        width: 6rem;
+    }
+
+    @media screen and (max-width: 680px) {
+        height: 6rem;
+        width: 5rem;
+    }
     div{
         font-size: 1rem;
     }
