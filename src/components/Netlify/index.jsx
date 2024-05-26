@@ -9,7 +9,7 @@ const formatDate = (dateString) => {
     month: '2-digit',
     year: 'numeric',
     hour: '2-digit',
-    minute: '2-digit',  // Corrigir o erro de digitação aqui
+    minute: '2-digit',
     second: '2-digit'
   };
   return new Date(dateString).toLocaleString('pt-BR', options);
@@ -55,7 +55,6 @@ const NetlifyData = () => {
   return (
     <ListaDeProjetos>
       {sites.map((site) => {
-        console.log('Variáveis disponíveis para o site:', site);
         return (
           <li key={site.id}>
             <LinkTexto local={site.ssl_url}>

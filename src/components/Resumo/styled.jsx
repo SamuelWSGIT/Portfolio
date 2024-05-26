@@ -21,13 +21,13 @@ export const ResumoImagem = styled.div`
   }
 `;
 
-export const TextoSobreMim = styled.h2`
+export const TextoSobreMim = styled.div`
   padding-bottom: 0.5rem;
   font-size: large;
   line-height: 1.5;
 `;
 
-export const TituloSobreMim = styled.h2`
+export const TituloSobreMim = styled.div`
   padding: 0.5rem 0;
   font-size: x-large;
 `;
