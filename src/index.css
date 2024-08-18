@@ -3,6 +3,35 @@
    License: none (public domain)
 */
 
+/*--------------------------------------Scroll Bar-------------------------------------------*/
+
+body {
+  overflow-y: scroll; /* Mantém a barra de rolagem visível e fixa */
+}
+
+/* Estilização para Firefox */
+html {
+  scrollbar-width: thin; /* Define a largura da barra de rolagem como fina */
+  scrollbar-color: var(--color-text-offset) var(--color-bg); /* Cor do polegar e da trilha */
+}
+
+/* Estilização para navegadores baseados em WebKit */
+*::-webkit-scrollbar {
+  width: 0.7rem; /* Largura da barra de rolagem */
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-bg); /* Cor da trilha da barra de rolagem */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-text-offset); /* Cor do polegar da barra de rolagem */
+  border-radius: 10px; /* Arredondamento das bordas do polegar */
+  border: 0.2rem solid var(--color-bg); /* Borda ao redor do polegar */
+}
+
+/*--------------------------------------Scroll Bar-------------------------------------------*/
+
 :root {
   --color-bg: #000000;
   --color-bg-offset: #00000080;

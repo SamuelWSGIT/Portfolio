@@ -31,7 +31,7 @@ export default function LinkTexto({ children, local, icon, download, project, ..
   if (isExternal) {
     return (
       <LinkTextoContainer>
-        <a href={local}   target="_blank" rel="noopener noreferrer" {...props}>
+        <a href={local} className="linkEditado"   target="_blank" rel="noopener noreferrer" {...props}>
           {icon && <FontAwesomeIcon size="xl" icon={icon} />}
           {children}
         </a>

@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export const LinkTextoContainer = styled.div`
- .linkEditado.active{
+ .linkEditado.active, .linkEditadoProjeto.active{
   div{
     color: var(--color-secondary);
-
   }
  }
   display: flex;
