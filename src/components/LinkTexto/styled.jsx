@@ -11,7 +11,9 @@ export const LinkTextoContainer = styled.div`
   gap: 1rem;
   color: var(--color-text);
   a{
+    display: flex;
     text-decoration: none;
+    gap: 1rem;
   }
   .linkEditado{
     display: flex;

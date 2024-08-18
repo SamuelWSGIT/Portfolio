@@ -9,7 +9,7 @@ export default function LinkTexto({ children, local, icon, download, ...props })
   if (download) {
     return (
       <LinkTextoContainer>
-        <a href={local} className="linkEditado" download={download} {...props}>
+        <a href={local}  download={download} {...props}>
           {icon && <FontAwesomeIcon size="xl" icon={icon} />}
           {children}
         </a>
@@ -20,7 +20,7 @@ export default function LinkTexto({ children, local, icon, download, ...props })
   if (isExternal) {
     return (
       <LinkTextoContainer>
-        <a href={local} className="linkEditado" target="_blank" rel="noopener noreferrer" {...props}>
+        <a href={local}  target="_blank" rel="noopener noreferrer" {...props}>
           {icon && <FontAwesomeIcon size="xl" icon={icon} />}
           {children}
         </a>
