@@ -29,7 +29,7 @@ export default function Contato() {
         {contatos.map((contato, index) => (
           <LinkTexto key={index} local={contato.href} icon={contato.icon}>
             <AnimacaoColorida>
-              <p>{contato.text}</p>
+              {contato.text}
             </AnimacaoColorida>
           </LinkTexto>
         ))}

@@ -57,7 +57,7 @@ const NetlifyData = () => {
       {sites.map((site) => {
         return (
           <li key={site.id}>
-            <LinkTexto local={site.ssl_url}>
+            <LinkTexto project local={site.ssl_url}>
               <h3>{site.name}</h3>
               <Datas>
                 <p>Criado: {formatDate(site.created_at)}</p>

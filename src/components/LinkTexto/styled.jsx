@@ -11,14 +11,24 @@ export const LinkTextoContainer = styled.div`
   gap: 1rem;
   color: var(--color-text);
   a{
-    display: flex;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
     gap: 1rem;
+  }
+  .linkEditadoProjeto{
+    gap: 0rem;
+    display: flex;
+    flex-direction: column;
   }
   .linkEditado{
     display: flex;
+    flex-direction: row;
     gap: 1rem;
     position: relative;
+    a{
+      display: flex;
+    }
   }
   .linkEditado:after{
       content: '';
