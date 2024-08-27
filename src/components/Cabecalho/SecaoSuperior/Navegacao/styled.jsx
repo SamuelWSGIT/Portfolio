@@ -4,7 +4,6 @@ export const NavegacaoContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10;
     width: 100%;
     height: 5rem;
     
@@ -17,37 +16,47 @@ export const NavegacaoContainer = styled.div`
     }
 `;
 
+export const NaveStatica = styled.ul`
+    display: flex;
+    padding-top: 1rem;
+    gap: 1rem;
+    border-bottom: 2px solid var;
+    flex-direction: row;
+    background: transparent;
+    @media (max-width: 801px ) {
+        display: none;
+        margin-right: auto; /* Adicionado para ajustar o alinhamento do botão */
+    }
+`;
 export const Nave = styled.ul`
-    z-index: 11;
-
+    z-index: 10;
     display: none;
-
     display: ${({ $menuAberto }) => ($menuAberto ? "flex" : "none")};
     padding-top: 1rem;
+    position: fixed;
+    height: 100%;
+    right: 0px;
+    bottom: -80px;
+    padding-top: 150px;
     gap: 1rem;
     border-bottom: 2px solid var;
     flex-direction: column;
     background: var(--color-bg);
 
     @media (min-width: 802px) {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        background: transparent;
-        box-shadow: none;
-        padding: 0;
-        gap: 2rem; /* Ajustado para espaçamento entre os itens em telas grandes */
+        display: none;
     }
 `;
 
 export const BotaoMobile = styled.button`
-z-index: 13;
+    z-index: 11;
     height: 2rem;
-    display: none;
+    display: block;
+    position: fixed;
     right: 5%;
-
-    @media (max-width: 801px ) {
-        display: block;
+    
+    @media (min-width: 801px ) {
+        display: none;
         margin-right: auto; /* Adicionado para ajustar o alinhamento do botão */
     }
 `;

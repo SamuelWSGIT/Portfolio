@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from "react-router-dom";
-import { BotaoMobile, ItemNavegacao, Nave, NavegacaoContainer } from "./styled";
+import { BotaoMobile, ItemNavegacao, Nave, NaveStatica, NavegacaoContainer } from "./styled";
 import AnimacaoColorida from "../../../AnimacaoColorida";
 import { LinkTextoContainer } from "../../../LinkTexto/styled";
 
@@ -49,6 +49,9 @@ export default function Navegacao() {
             <Nave $menuAberto={menuAberto}>
                 {nav}
             </Nave>
+            <NaveStatica>
+                {nav}
+            </NaveStatica>
         </NavegacaoContainer>
     );
 }
