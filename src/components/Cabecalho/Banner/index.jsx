@@ -19,7 +19,9 @@ export default function Banner() {
                 <Revelar>
                     <BannerTexto />
                 </Revelar>
-                <BannerImagem />
+                <Revelar>
+                    <BannerImagem />
+                </Revelar>
             </BannerImgText>
             <LinkContainer>
                 {links.map((link, index) => (

@@ -1,14 +1,12 @@
 import styled from 'styled-components';
 
 export const CabecalhoIntroContainer = styled.div`
-    width: 90vw;
     position: absolute;
+    width: 90%;
+    height: 5rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-
-    @media screen and (max-width: 900px) {
-        display: none;
-    }
 
     .primeiro {
         span:first-child {
@@ -28,7 +26,7 @@ export const CabecalhoIntroContainer = styled.div`
 
 export const CabecalhoTextoLogo = styled.div`
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1050px) {
         display: none;
     }
     gap: 0.3rem;

@@ -4,7 +4,7 @@ export const RodapeContainer = styled.footer`
   bottom: 0;
   margin-top: 5rem;
   height: 2rem;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;

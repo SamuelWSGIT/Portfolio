@@ -6,6 +6,9 @@ export const ResumoContainer = styled.div`
   justify-content: center;
   gap: 3rem;
   width: 80vw;
+  @media screen and (max-width: 1460px) {
+        width: 95vw;
+    }
 `;
 
 export const ResumoImagem = styled.div`
@@ -35,11 +38,11 @@ export const TituloSobreMim = styled.div`
 export const ResumoTextos = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 2.5rem;
   width: 70%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1280px) {
     grid-template-columns: 1fr;
-    width: 100%;
+    width: 95%;
   }
 `;

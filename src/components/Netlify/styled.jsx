@@ -2,16 +2,11 @@ import styled from 'styled-components';
 
 export const ListaDeProjetos = styled.ul`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(2, minmax(1rem, 1fr));
+    grid-auto-rows: minmax(1rem, auto);
     gap: 2rem;
     padding: 1rem;
     box-sizing: border-box;
-
-    @media screen and (max-width: 450px) {
-        gap: .5rem;
-        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-    }
 
     li {
         display: flex;
@@ -39,13 +34,16 @@ export const ListaDeProjetos = styled.ul`
 
     h3 {
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: small;
         text-align: center;
-        padding: .5rem 0;
+        padding: .5rem .5rem;
     }
 
     p {
         font-size: 1rem;
+        @media screen and (max-width: 900px) {
+            display: none;
+}
     }
 `;
 

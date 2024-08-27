@@ -1,24 +1,59 @@
 import styled from 'styled-components';
 
 export const NavegacaoContainer = styled.div`
-    z-index: 1;
-    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
+    z-index: 10;
+    width: 100%;
+    height: 5rem;
+    
+    @media (max-width: 800px ) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; /* Alinha o botão e o menu verticalmente em telas pequenas */
+        position: relative;
+    }
 `;
 
 export const Nave = styled.ul`
-    display: flex;
-    gap: 2rem; /* Reduzido de 5rem para 2rem para telas menores */
+    z-index: 11;
 
-    @media screen and (max-width: 550px) {
-        gap: 1rem; /* Ajuste adicional para telas menores */
+    display: none;
+
+    display: ${({ $menuAberto }) => ($menuAberto ? "flex" : "none")};
+    padding-top: 1rem;
+    gap: 1rem;
+    border-bottom: 2px solid var;
+    flex-direction: column;
+    background: var(--color-bg);
+
+    @media (min-width: 802px) {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        gap: 2rem; /* Ajustado para espaçamento entre os itens em telas grandes */
     }
-    @media screen and (max-width: 400px) {
-        gap: .5rem; /* Ajuste adicional para telas menores */
+`;
+
+export const BotaoMobile = styled.button`
+z-index: 13;
+    height: 2rem;
+    display: none;
+    right: 5%;
+
+    @media (max-width: 801px ) {
+        display: block;
+        margin-right: auto; /* Adicionado para ajustar o alinhamento do botão */
     }
 `;
 
 export const ItemNavegacao = styled.li`
-    /* Adicione os estilos necessários aqui conforme necessário */
+z-index: 12;
+    padding: 0.5rem 1rem;
+    list-style: none;
 `;

@@ -1,39 +1,15 @@
+import { useState } from 'react';
 import { NavLink } from "react-router-dom";
-import { ItemNavegacao, Nave, NavegacaoContainer } from "./styled";
+import { BotaoMobile, ItemNavegacao, Nave, NavegacaoContainer } from "./styled";
 import AnimacaoColorida from "../../../AnimacaoColorida";
 import { LinkTextoContainer } from "../../../LinkTexto/styled";
 
 const Paginas = [
-    {
-        caminho: "/",
-        nome: "Home",
-        key: "0"
-    },
-    {
-        caminho: "sobre",
-        nome: "Sobre",
-        key: "1"
-    },
-    {
-        caminho: "projeto",
-        nome: "Projetos",
-        key: "2"
-    },
-    {
-        caminho: "contato",
-        nome: "Contato",
-        key: "3"
-    },
-    {
-        caminho: "https://www.linkedin.com/in/samuellkq/",
-        nome: "Linkedin",
-        key: "4"
-    },
-    {
-        caminho: "https://github.com/SamuelWSGIT",
-        nome: "Github",
-        key: "5"
-    }
+    { caminho: "/", nome: "Home", key: "0" },
+    { caminho: "sobre", nome: "Sobre", key: "1" },
+    { caminho: "projeto", nome: "Projetos", key: "2" },
+    { caminho: "https://www.linkedin.com/in/samuellkq/", nome: "Linkedin", key: "4" },
+    { caminho: "https://github.com/SamuelWSGIT", nome: "Github", key: "5" }
 ];
 
 const nav = Paginas.map(Pagina => {
@@ -61,9 +37,16 @@ const nav = Paginas.map(Pagina => {
 });
 
 export default function Navegacao() {
+    const [menuAberto, setMenuAberto] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuAberto(prev => !prev);
+    };
+
     return (
         <NavegacaoContainer>
-            <Nave>
+            <BotaoMobile onClick={toggleMenu}>Menu</BotaoMobile>
+            <Nave $menuAberto={menuAberto}>
                 {nav}
             </Nave>
         </NavegacaoContainer>
