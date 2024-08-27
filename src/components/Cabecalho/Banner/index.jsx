@@ -4,12 +4,12 @@ import BannerTexto from "./BannerTexto";
 import LinkTexto from "../../LinkTexto";
 import AnimacaoColorida from "../../AnimacaoColorida";
 import Revelar from "../../Revelar";
-import { faProjectDiagram, faEnvelope, faFileDownload } from "@fortawesome/free-solid-svg-icons";
+import { faProjectDiagram, faFileDownload, faAddressBook } from "@fortawesome/free-solid-svg-icons";
 
 export default function Banner() {
     const links = [
         { local: "projeto", text: "Ver meus projetos", icon: faProjectDiagram },
-        { local: "contato", text: "Entre em Contato", icon: faEnvelope },
+        { local: "sobre", text: "Saiba mais em Sobre", icon: faAddressBook },
         { local: "/curriculo.pdf", text: "Baixe Meu Currículo", icon: faFileDownload, download: "curriculo.pdf" }
     ];
 

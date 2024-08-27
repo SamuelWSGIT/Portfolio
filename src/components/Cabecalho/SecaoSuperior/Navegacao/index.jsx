@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import { BotaoMobile, ItemNavegacao, Nave, NaveStatica, NavegacaoContainer } from "./styled";
 import AnimacaoColorida from "../../../AnimacaoColorida";
@@ -43,8 +43,27 @@ export default function Navegacao() {
         setMenuAberto(prev => !prev);
     };
 
+    // Fecha o menu sempre que o site carregar
+    useEffect(() => {
+        setMenuAberto(false);
+    }, []);
+
+    // Fecha o menu quando o usuário clica fora dele
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (!event.target.closest('.menu-container')) {
+                setMenuAberto(false);
+            }
+        };
+
+        document.addEventListener('click', handleClickOutside);
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, []);
+
     return (
-        <NavegacaoContainer>
+        <NavegacaoContainer className="menu-container">
             <BotaoMobile onClick={toggleMenu}>Menu</BotaoMobile>
             <Nave $menuAberto={menuAberto}>
                 {nav}

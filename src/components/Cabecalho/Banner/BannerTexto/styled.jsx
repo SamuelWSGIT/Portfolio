@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const BannerTextoContainer = styled.div`
-    width: 90%;
+    width: 80%;
     max-width: 50rem;
     color: var(--color-text);
     font-size: x-large;

@@ -1,7 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "../../pages/Home";
 import Sobre from "../../pages/Sobre";
-import Contato from "../../pages/Contato";
 import Projeto from "../../pages/Projeto";
 
 import { AnimatePresence } from 'framer-motion'
@@ -14,7 +13,6 @@ export default function AnimacaoRotas() {
             <Routes location={location} key={location.pathname}>
                 <Route path='/' element={<Home />} />
                 <Route path='sobre' element={<Sobre />} />
-                <Route path='contato' element={<Contato />} />
                 <Route path='projeto' element={<Projeto />} />
             </Routes>
         </AnimatePresence>
