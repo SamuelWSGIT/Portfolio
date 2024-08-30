@@ -7,10 +7,12 @@ export const RodapeContainer = styled.footer`
   margin: .5rem;
   gap: .7rem;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   h3{
+    width: 100vw;
+    text-align: center;
+    padding-bottom: .5rem;
     border-bottom: 2px solid var(--color-secondary);
   }
   @media screen and (max-width: 600px) {
