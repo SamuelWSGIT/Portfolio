@@ -13,7 +13,7 @@ export const RodapeContainer = styled.footer`
     width: 100vw;
     text-align: center;
     padding-bottom: .5rem;
-    border-bottom: 2px solid var(--color-secondary);
+    border-bottom: 1px solid var(--color-text-offset);
   }
   @media screen and (max-width: 600px) {
       p{
