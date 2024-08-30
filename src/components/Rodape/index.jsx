@@ -20,8 +20,8 @@ export default function Rodape() {
 
   return (
     <RodapeContainer>
+        <h3>Contatos</h3>
       <ContatoContainer>
-        <h3>Contatos:</h3>
         {contatos.map((contato, index) => (
           <LinkTexto key={index} local={contato.href} icon={contato.icon}>
             <AnimacaoColorida>

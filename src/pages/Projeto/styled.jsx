@@ -5,6 +5,7 @@ export const ProjetoContainer = styled.div`
     align-items: center;
     flex-direction: column;
     gap: 5rem;
+    min-height: 100vh;
 `;
 
 export const Projetos = styled.div`

@@ -12,6 +12,7 @@ export const ResumoContainer = styled.div`
 `;
 
 export const ResumoImagem = styled.div`
+  margin-top: 2rem;
   width: 30%;
   @media screen and (max-width: 1460px) {
         display: none;

@@ -2,16 +2,18 @@ import styled from 'styled-components';
 
 export const RodapeContainer = styled.footer`
   bottom: 0;
-  margin-top: 5rem;
   height: fit-content;
-  width: 90%;
-  gap: 1rem;
+  width: 100vw;
+  margin: .5rem;
+  gap: .7rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  h3{
+    border-bottom: 2px solid var(--color-secondary);
+  }
   @media screen and (max-width: 600px) {
-    width: 95vw;
       p{
         font-size: small;
       }
@@ -32,14 +34,20 @@ export const RodapeContainer = styled.footer`
 
 export const RodapeInfo = styled.div`
   display: flex;
-  width: 100%;
+  width: 98%;
   justify-content: space-between;
 `
 
 export const ContatoContainer = styled.div`
-    width: 100%;
+    width: 98%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .2rem;
+    @media screen and (max-width: 600px) {
+      h1,h2,h3,p{
+        font-size: small;
+      }
+    }
 `;
