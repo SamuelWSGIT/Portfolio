@@ -44,9 +44,10 @@ export const ContatoContainer = styled.div`
     width: 98%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: .2rem;
+    gap: .5rem;
     @media screen and (max-width: 600px) {
       h1,h2,h3,p{
         font-size: small;

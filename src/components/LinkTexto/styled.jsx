@@ -7,13 +7,13 @@ export const LinkTextoContainer = styled.div`
   }
  }
   display: flex;
-  gap: 1rem;
+  gap: .5rem;
   color: var(--color-text);
   a{
     text-decoration: none;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: .5rem;
   }
   .linkEditadoProjeto{
     gap: 0rem;
@@ -23,7 +23,7 @@ export const LinkTextoContainer = styled.div`
   .linkEditado{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: .5rem;
     position: relative;
     a{
       display: flex;
